@@ -1,9 +1,9 @@
-let menu = document.querySelector('#menu-item');
+let menu = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
-    navbar.classList.toggle('open');
+    navbar.classList.toggle('open')
 };
 
 const sr = ScrollReveal({
@@ -20,5 +20,3 @@ sr.reveal('.home-text span', {delay: 600, origin: 'top'});
 sr.reveal('.home-text h1', {delay: 680, origin: 'left'});
 sr.reveal('.home-text p', {delay: 750, origin: 'right'});
 sr.reveal('.main-btn', {delay: 860, origin: 'left'});
-
-ScrollReveal().reveal('.logo')
